@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="data-styles.css" ?>
+<!--Above is XML declaration-->
+<!--Root node/element(tag)-->
+<xml-rules>
+    <title>SIX XML RULES</title>
+
+    <!--Child node/element 1-->
+    <rule>
+        <heading>Rule 1: XML Documents Must Have a Root Element</heading>
+        <description>Every XML document must begin with a single root element that encloses all other elements.</description>
+        <example >code sample:
+        &#60; root &#62;
+            &#60; child &#62;
+                &#60; subchild &#62;.....&#60; /subchild &#62;
+            &#60; /child &#62;
+        &#60; /root &#62; 
+        </example>
+    </rule>
+
+    <!--Child node/element 2-->
+    <rule>
+        <heading>Rule 2: The XML Prolog (Declaration)</heading>
+        <description>An optional but recommended declaration at the top of the document defines the XML version and character encoding.</description>
+        <example>code sample: &#60; ?xml version="1.0" encoding="UTF-8"? &#62; </example>
+    </rule>
+
+    <!--Child node/element 3-->
+    <rule>
+        <heading>Rule 3: All XML Elements Must Have a Closing Tag</heading>
+        <description>Unlike HTML, XML is strict—every opening tag must have a corresponding closing tag. Self-closing tags are allowed for empty elements.</description>
+        <example>code sample: 
+        &#60; p &#62; This is a paragraph. &#60; /p &#62;
+&#60; br / &#62;
+</example>
+    </rule>
+
+    <!--Child node/element 4-->
+    <rule>
+        <heading>Rule 4: XML Tags Must Be Properly Nested</heading>
+        <description>Elements must be nested correctly. You cannot close a parent before its children are closed.</description>
+        <example>code sample: </example>
+    </rule>
+
+    <!--Child node/element 5-->
+    <rule>
+        <heading>Rule 5: XML Is Case-Sensitive</heading>
+        <description>Tag names are case-sensitive. &lt;Item&gt; and &lt;item&gt; are treated as completely different elements.</description>
+        <example>code sample:&#60; message &#62;This is correct &#60; /message &#62;</example>
+    </rule>
+
+    <!--Child node/element 6-->
+    <rule>
+        <heading>Rule 6: Attribute Values Must Be Quoted</heading>
+        <description>All attribute values must be enclosed in either single or double quotes.</description>
+        <example>code sample: &#60; b &#62;&#60; i &#62; This text is bold and italic &#60; /i &#62;&#60; /b &#62;
+</example>
+    </rule>
+</xml-rules>

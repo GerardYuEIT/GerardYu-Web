@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XML-RSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="css/mystyle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="gerardNav" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <img src="images/global.png" alt="Bootstrap" width="30" height="30">
+            </a>
+            <a class="navbar-brand fw-bold" href="#">ITWD6.408</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Bar Content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold">
+                    <li class="nav-item mx-2">
+                        <a id="navbaritems" class="nav-link text-black" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a id="navbaritems" class="nav-link text-black" href="form.html">Forms</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a id="navbaritems" class="nav-link text-black selected" href="#">XML/JSON</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a id="navbaritems" class="nav-link text-black" href="javascript.html">Javascript</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a id="navbaritems" class="nav-link text-black" href="research.html">Research</a>
+                    </li>
+                </ul>
+
+                <!-- Search Bar -->
+                <form class="d-flex" role="search">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#searchInput">
+                        <i class="bi-search"></i>
+                    </button>
+
+                    <div class="collapse ms-2" id="searchInput">
+                        <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Toggle Buttons -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Column: Toggle Buttons -->
+            <div id="formbutton" class="col-12 col-md-3 d-flex flex-md-column gap-2 mb-3 mt-3 order-md-1">
+                <input type="radio" class="btn-check" name="formToggle" id="btn1" autocomplete="off" checked>
+                <label id="form-button-text" class="btn border border-2 border-secondary rounded-0 w-100 fw-bold"
+                    for="btn1" data-bs-toggle="collapse" data-bs-target="#xml1">
+                    xml
+                </label>
+
+                <input type="radio" class="btn-check" name="formToggle" id="btn2" autocomplete="off">
+                <label class="btn border border-2 border-secondary rounded-0 w-100 fw-bold" for="btn2"
+                    data-bs-toggle="collapse" data-bs-target="#xml2">
+                    rss
+                </label>
+            </div>
+
+            <!-- Right Column: Accordion Panels -->
+            <div class="col-12 col-md-9 mt-3 order-md-2">
+                <div class="accordion" id="accordionExample">
+                    <div class="collapse show" id="xml1" data-bs-parent="#accordionExample">
+                        <input type="text" id="xmlSearch" class="form-control mb-3" placeholder="Search XML rules...">
+                        <div class="card card-body">
+
+                        </div>
+                    </div>
+                    <div class="collapse" id="xml2" data-bs-parent="#accordionExample">
+                        <div class="card card-body">
+                            <h1>Work with an XML RSS Feed</h1>
+                            <p>Use XMLHttpRequest Object to retrieve the RSS feed</p>
+                            <!-- For XML Rules -->
+
+
+
+                            <div class="row mb-3">
+                                <!-- For RSS Feed -->
+                                <input type="text" id="rssSearch" class="form-control mb-3"
+                                    placeholder="Search news articles...">
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-primary" onclick="loadRSS()">Load RSS</button>
+                                </div>
+                            </div>
+
+                            <section id="rssFeed" class="row g-4"></section>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/myscript.js"></script>
+
+</body>
+
+
+
+<footer>
+    <div id="gerardFooter" class="container-fluid p-2">
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-sm-12 text-center text-md-start">
+                <img src="images/linkedin.png" alt="LinkedIn" width="30" height="30">
+                <img src="images/youtube.png" alt="YouTube" width="30" height="30">
+                <img src="images/twitter.png" alt="Twitter" width="30" height="30">
+                <img src="images/facebook.png" alt="Facebook" width="30" height="30">
+                <img src="images/insta.png" alt="Instagram" width="30" height="30">
+            </div>
+            <div class="col-9 col-md-4 text-end text-md-center text-sm-center fw-bold">
+                &copy;2025 Geronimo Gerard
+            </div>
+            <div class="col-3 col-md-4 text-end text-primary">
+                Privacy Policy
+            </div>
+        </div>
+    </div>
+</footer>

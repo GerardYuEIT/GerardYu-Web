@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="css/mystyle.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav id="gerardNav" class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+        <img src="images/global.png" alt="Bootstrap" width="30" height="30">
+      </a>
+      <a class="navbar-brand fw-bold" href="#">ITWD6.408</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold">
+          <li class="nav-item mx-2">
+            <a id="navbaritems" class="nav-link text-black selected" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a id="navbaritems" class="nav-link text-black" href="form.html">Forms</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a id="navbaritems" class="nav-link text-black" href="xml-rss.html">XML/JSON</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a id="navbaritems" class="nav-link text-black" href="javascript.html">Javascript</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a id="navbaritems" class="nav-link text-black" href="research.html">Research</a>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#searchInput">
+            <i class="bi-search"></i>
+          </button>
+
+          <div class="collapse ms-2" id="searchInput">
+            <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+          </div>
+        </form>
+
+
+      </div>
+    </div>
+  </nav>
+
+  <div id="gerardHero" class="position-relative d-flex align-items-center justify-content-center">
+    <div id="hero"
+      class="col-sm-12 col-md-6 col-lg-6 text-white text-center border border-1 border-white shadow px-4 py-5">
+      <h5>Advanced Internet and Web Learning Portfolio</h5>
+      <h1>I am Gerard</h1>
+      <p>And I'm a Web Developer</p>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid">
+    <div class="row align-items-stretch">
+      <!-- BIO Section -->
+      <div id="gerardBio" class="container-fluid py-4">
+        <div class="row">
+          <div class="col-12 mb-3">
+            <h2 class="fw-bold">BIO</h2>
+          </div>
+
+          <!-- Image Column -->
+          <div class="col-12 col-md-4 d-flex justify-content-center align-items-start mb-3 mb-md-0">
+            <img src="images/profile.jpg" class="img-fluid rounded-circle" alt="Portrait" style="max-width: 180px;">
+          </div>
+
+          <!-- Text Column -->
+          <div class="col-12 col-md-8">
+            <p class="lead">My name is Geronimo Gerard, and I am a 19-year-old student currently enrolled in the
+              Bachelor of Computing Systems program at the Eastern Institute of Technology (EIT) in New Zealand. I
+              chose this program because of my strong interest in technology, problem-solving, and the opportunities
+              it offers for building a professional career in the IT field.</p>
+            <p>Outside of my academic commitments, I am dedicated to continuous personal and professional development.
+              I am particularly interested in programming, database management, and the development of web
+              applications, as these areas align closely with my career aspirations in computing. I also place
+              importance on maintaining a balanced lifestyle by pursuing fitness and calisthenics, which help me
+              strengthen my physical health alongside my studies. My long-term goal is to establish a career in the IT
+              industry where I can apply my skills to create innovative and practical solutions. At the same time, I
+              am motivated to use my education and career opportunities to provide meaningful support to my family and
+              to contribute positively to the wider community.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Technologies Section -->
+      <div id="gerardWebTech" class="col-12 col-md-6 d-flex flex-column p-4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 mb-3">
+              <h2 class="fw-bold">MY WEB TECHNOLOGIES</h2>
+
+            </div>
+
+            <div class="col-12">
+              <h5 class="link-primary">TOP 5 WEB TECHNO I USE:</h5>
+              <ol class="ps-3">
+                <li><a href="#" class="fw-semibold">Web hosting</a>: GitHub Pages</li>
+                <li><a href="#" class="fw-semibold">Web design</a>: Bootstrap 5</li>
+                <li><a href="#" class="fw-semibold">Database</a>: Firebase</li>
+                <li><a href="#" class="fw-semibold">Code Editor</a>: VS Code</li>
+                <li><a href="#" class="fw-semibold">Web Frameworks</a>: Flask / Django</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- HTML -->
+  <div id="gerardWebDevComp" class="container-fluid ">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="fw-bold p-4">MY WEB DEVELOPMENT COMPETENCY</h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <!-- Flip Card 1: HTML5 -->
+      <div class="col-12 col-md-4 mb-3">
+        <div class="flip-card mx-auto">
+          <div class="flip-card-inner">
+            <div
+              class="flip-card-front d-flex flex-column flex-sm-column flex-md-column align-items-center text-center rounded-0">
+              <div class="d-flex flex-row flex-sm-column align-items-center w-100 justify-content-center gap-3">
+                <h5 class="cardheader card-header m-0">MARK-UP (HTML5)</h5>
+                <img src="images/html5.png" alt="HTML5"
+                  class="img-fluid rounded-circle border border-secondary border-2 competency-img">
+              </div>
+            </div>
+            <div class="flip-card-back rounded-0 p-4 p-4">
+              <p>Strong understanding of semantic tags, accessibility, and document structure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card 2: CSS -->
+      <div class="col-12 col-md-4 mb-3">
+        <div class="flip-card mx-auto">
+          <div class="flip-card-inner">
+            <div
+              class="flip-card-front d-flex flex-column flex-sm-column flex-md-column align-items-center text-center rounded-0">
+              <div class="d-flex flex-row flex-sm-column align-items-center w-100 justify-content-center gap-3">
+                <h5 class="cardheader card-header m-0">STYLING (CSS)</h5>
+                <img src="images/css3.png" alt="CSS3"
+                  class="img-fluid rounded-circle border border-secondary border-2 competency-img">
+              </div>
+            </div>
+            <div class="flip-card-back rounded-0 p-4">
+              <p>Comfortable with Flexbox, Grid, animations, and responsive design principles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card 3: JavaScript -->
+      <div class="col-12 col-md-4 mb-3">
+        <div class="flip-card mx-auto">
+          <div class="flip-card-inner">
+            <div
+              class="flip-card-front d-flex flex-column flex-sm-column flex-md-column align-items-center text-center rounded-0">
+              <div class="d-flex flex-row flex-sm-column align-items-center w-100 justify-content-center gap-3">
+                <h5 class="cardheader card-header m-0">INTERACTIVITY (JAVASCRIPT)</h5>
+                <img src="images/javascript.png" alt="JavaScript"
+                  class="img-fluid rounded-circle border border-secondary border-2 competency-img">
+              </div>
+            </div>
+            <div class="flip-card-back rounded-0 p-4">
+              <p>Experience with DOM manipulation, event handling, and interactive UI components.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  </div>
+  </div>
+  <div id="gerardStatement" class="container-fluid flex-column justify-content-center">
+    <div class="row">
+      <div class="col-12 mb-3 mt-3">
+        <h2 class="fw-bold p-3"> STATEMENT OF AUTHETICITY</h2>
+        <div class="m-3">
+          <p>"I confirm that</p>
+          <p>This is an original assessment and is entirely my own work</p>
+          <p>It contains no material previously published or written by another person or myself except where the due
+            acknowledgement is made in the text</p>
+          <p>No material which to a substantial extent, has been submitted for any other academic course, is included
+            without acknowledgement</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+<footer>
+  <div id="gerardFooter" class="container-fluid p-2">
+    <div class="row align-items-center">
+      <div class="col-lg-4 col-sm-12 text-center text-md-start">
+        <img src="images/linkedin.png" alt="LinkedIn" width="30" height="30">
+        <img src="images/youtube.png" alt="YouTube" width="30" height="30">
+        <img src="images/twitter.png" alt="Twitter" width="30" height="30">
+        <img src="images/facebook.png" alt="Facebook" width="30" height="30">
+        <img src="images/insta.png" alt="Instagram" width="30" height="30">
+      </div>
+      <div class="col-9 col-md-4 text-end text-md-center text-sm-center fw-bold">
+        &copy;2025 Geronimo Gerard
+      </div>
+      <div class="col-3 col-md-4 text-end text-primary">
+        Privacy Policy
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>
