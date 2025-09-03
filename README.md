@@ -5,6 +5,7 @@ Welcome to my personal web portfolio — a responsive, modular showcase of my wo
 ## 🚀 Features
 
 - **Responsive Layout**: Mobile-first design using Bootstrap 5 grid and utility classes.
+- **Personal Page**: My own Personal page
 - **Modular Components**: Each demo (e.g., product grid, shopping cart, dropdowns, XML/RSS viewers) is isolated for maintainability.
 - **Dynamic XML Viewer**: Loads and displays XML syntax rules with live filtering.
 - **RSS Feed Reader**: Fetches and parses live news feeds using CORS proxy and XMLHttpRequest.
