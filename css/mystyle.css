@@ -2,12 +2,33 @@ html,
 body {
   overflow-x: hidden;
   padding: 0;
+  height: 100%;
+  margin: 0;
 }
 
-footer {
+body {
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+}
 
-  bottom: 0;
-  width: 100%;
+
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 
@@ -244,8 +265,10 @@ a {
 .research-box-back {
   transform: rotateY(180deg);
   color: #000;
-  overflow-y: auto;/* Enables vertical scroll */
-  max-height: 100%;/* Ensures it respects parent height */
+  overflow-y: auto;
+  /* Enables vertical scroll */
+  max-height: 100%;
+  /* Ensures it respects parent height */
   justify-content: flex-start;
 }
 
@@ -254,6 +277,7 @@ a {
   height: auto;
   object-fit: contain;
 }
+
 .ratio-4x3 {
   --bs-aspect-ratio: 150%;
 }
